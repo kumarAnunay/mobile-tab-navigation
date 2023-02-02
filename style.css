@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-1{
+    height: 100vh !important;
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+}
+
+.box{
+    width: 330px;
+    height: 550px;
+    background-color: white;
+    border: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content-1{
+    height: 495px;
+    width: 98%;
+    margin-top: 2px !important;
+    background-image: url("./images/flag.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    border: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.content-2{
+    width: 325px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin-top: 15px !important;
+}
+
+.btn-1{
+    height: 30px;
+    width: 15px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background: transparent;
+    padding: 0 !important;
+}
+
+.btn i{
+    font-size: 12px;
+}
+
+.para1{
+    font-size: 8px !important;
+}
+
+.first-btn{
+    margin-left: 5px !important;
+}
+
+.last-btn{
+    width: 40px !important;
+}
+
+.last-para{
+    text-align: center;
+    width: 100% !important;
+}
+
+button:hover{
+    color: #8e0520 !important;
+}
+
+@media screen and (min-width:280px) and (max-width: 653px){ 
+    
+    .box{
+        width: 300px !important;
+    }
+
+    .content-1{
+        width: 98%;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .content-2{
+        width: 98%;
+    }
+}
+
+@media screen and (min-width:540px) and (max-width: 720px){ 
+
+    .content-1{
+        width: 98%;
+    }
+
+    .content-2{
+        width: 98%;
+    }
+}
+
+.para1{
+    animation-name: text-modify;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text-modify {
+    0%{
+        color: #8e0520;
+    }
+    20%{
+        color: #f20b96;
+    }
+    40%{
+        color: #9a05f7;
+    }
+    60%{
+        color: #7b00f7;
+    }
+    80%{
+        color: #0cf737;
+    }
+    100%{
+        color: #08e7d8;
+    }
+}
