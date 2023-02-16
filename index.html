@@ -24,41 +24,70 @@
 <body>
     <div class="container-fluid d-flex justify-content-center align-items-center container-1">
         <div class="box">
-            <div class="container-fluid content-1">
+            <div class="container-fluid content-1" id="main">
             </div>
 
             <div class="container-fluid content-2">
                 <div class="btn-1 first-btn">
-                    <button class="btn">
+                    <button class="btn" onclick="function1()">
                         <i class="fa fa-solid fa-house"></i>
                     </button>
                     <p class="para1">HOME</p>
                 </div>
 
                 <div class="btn-1">
-                    <button class="btn">
-                        <i class="fa-sharp fa-solid fa-briefcase"></i>
+                    <button class="btn" onclick="function2()">
+                        <i class="fa-solid fa-bars"></i>
                     </button>
-                    <p class="para1">WORK</p>
+                    <p class="para1">MENU</p>
                 </div>
 
                 <div class="btn-1">
-                    <button class="btn">
-                        <i class="fa-solid fa-book-open"></i>
+                    <button class="btn" onclick="function3()">
+                        <i class="fa-solid fa-camera"></i>
                     </button>
-                    <p class="para1">BLOG</p>
+                    <p class="para1">CAMERA</p>
                 </div>
 
                 <div class="btn-1 last-btn">
-                    <button class="btn">
-                        <i class="fa-solid fa-people-roof"></i>
+                    <button class="btn" onclick="function4()">
+                        <i class="fa-solid fa-phone"></i>
                     </button>
-                    <p class="para1 last-para">ABOUT US</p>
+                    <p class="para1 last-para">PHONE</p>
                 </div>
-
             </div>
         </div>
     </div>
+
+    <script>
+        function function1(){
+            var fix =document.getElementById("main");
+            fix.style.backgroundSize="cover";
+            fix.style.backgroundPosition="center center";
+            fix.style.backgroundImage ="url('./images/flag.jpeg')"
+        }
+
+        function function2(){
+            var fix =document.getElementById("main");
+            fix.style.backgroundSize="cover";
+            fix.style.backgroundPosition="center center";
+            fix.style.backgroundImage ="url('./images/menu.jpg')"
+        }
+
+        function function3(){
+            var fix =document.getElementById("main");
+            fix.style.backgroundSize="190% 180%";
+            fix.style.backgroundPosition="center center";
+            fix.style.backgroundImage ="url('./images/camera.png')"
+        }
+
+        function function4(){
+            var fix =document.getElementById("main");
+            fix.style.backgroundSize="100% 100%";
+            fix.style.backgroundPosition="center center";
+            fix.style.backgroundImage ="url('./images/dial.jpg')"
+        }
+    </script>
 </body>
 
 </html>
